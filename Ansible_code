@@ -3,4 +3,5 @@ $ ansible all -m ping
     "changed": false,
     "ping": "pong"
 }
-
+ansible all -m ping -s -k -u vagrant
+ansible all -s -m shell -a 'apt-get install nginx'
