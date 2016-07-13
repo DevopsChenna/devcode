@@ -1,13 +1,1 @@
-$ ansible all -m ping
-127.0.0.1 | success >> {
-    "changed": false,
-    "ping": "pong"
-}
-ansible all -m ping -s -k -u vagrant
-ansible all -s -m shell -a 'apt-get install nginx'
----
-- hosts: local
-  tasks:
-   - name: Install Nginx
-     apt: pkg=nginx state=installed update_cache=true
-
+Ansible, is the Configuration Management Tool
